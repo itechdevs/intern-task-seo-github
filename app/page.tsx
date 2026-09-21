@@ -4,8 +4,9 @@ import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Itechos Nepal",
-  description: "Your trusted partner for technology solutions",
+  title: "iTechOS Nepal | Leading IT & Software Solutions Distributor",
+  description:
+    "Explore genuine software licenses, enterprise hardware, and professional IT consultation services from iTechOS Nepal, Kathmandu's trusted technology partner.",
 };
 
 export default function HomePage() {
@@ -33,7 +34,7 @@ export default function HomePage() {
           </div>
           <img
             src="/images/hero.svg"
-            alt="image"
+            alt="iTechOS Nepal IT Solutions and Services Illustration"
             width={520}
             height={380}
             className="hero-image"
@@ -77,7 +78,7 @@ export default function HomePage() {
         </div>
         <p className="more-link">
           Want to see everything we sell?{" "}
-          <Link href="/onlinestore">Click here</Link>.
+          <Link href="/onlinestore">Explore our online store</Link>.
         </p>
       </section>
 

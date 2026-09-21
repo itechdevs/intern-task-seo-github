@@ -4,35 +4,40 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "itechosNepal",
+  metadataBase: new URL("https://itechosnepal.com"),
+  title: "iTechOS Nepal | Your Trusted Partner for Technology Solutions",
+  description:
+    "iTech Office Support empowers your digital future with seamless IT solutions, offering top-tier products and services as a leading IT distributor in Nepal.",
+   
+     alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "itechosNepal",
+    title: "iTechOS Nepal | Your Trusted Partner for Technology Solutions",
     description:
-      "iTech Office Support empowers your digital future with seamless IT solutions, offering top-tier products and services as a leading IT distributor in Nepal",
+      "iTech Office Support empowers your digital future with seamless IT solutions, offering top-tier products and services as a leading IT distributor in Nepal.",
     type: "website",
     images: [
       {
-        url: "http://localhost:3000/api/og-images/root",
+        url: "/api/og-images/root",
         width: 1200,
         height: 630,
-        alt: "og-image-for-home-page",
+        alt: "iTechOS Nepal Technology Solutions Homepage",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "itechosNepal",
+    title: "iTechOS Nepal | Your Trusted Partner for Technology Solutions",
     description:
-      "iTech Office Support empowers your digital future with seamless IT solutions, offering top-tier products and services as a leading IT distributor in Nepal",
-    images: ["http://localhost:3000/api/og-images/root"],
+      "iTech Office Support empowers your digital future with seamless IT solutions, offering top-tier products and services as a leading IT distributor in Nepal.",
+    images: ["/api/og-images/root"],
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export default function RootLayout({
