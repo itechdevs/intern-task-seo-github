@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "iTechOS Nepal | Your Trusted Partner for Technology Solutions",
   description:
     "iTech Office Support empowers your digital future with seamless IT solutions, offering top-tier products and services as a leading IT distributor in Nepal.",
+   
+     alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "iTechOS Nepal | Your Trusted Partner for Technology Solutions",
     description:
