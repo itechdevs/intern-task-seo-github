@@ -9,6 +9,9 @@
 5. Uninformative Anchor Text (`app/page.tsx`) : Internal store link used generic `"Click here"` anchor text instead of descriptive keywords.
 6. Viewport Accessibility Restrictions (`app/layout.tsx`) : The viewport configuration set `userScalable: false` and `maximumScale: 1`, triggering SEO accessibility penalties.
 
+7. Missing Canonical Tags (`app/layout.tsx`) : The site lacked a canonical URL link tag, risking duplicate content penalties from search engine crawlers.
+
+
 ## Changes Implemented
 
 1. Updated Page Metadata: Extended `description` in `app/page.tsx` to 142 characters with relevant keywords. Added top-level `description` and `metadataBase` to `app/layout.tsx`.
@@ -17,12 +20,11 @@
 
 3. Improved Accessibility & Link SEO : Updated hero image `alt` attribute to `"iTechOS Nepal IT Solutions and Services Illustration"` and changed link text to `"Explore our online store"`.
 4. Optimized Viewport Configuration: Removed zoom restrictions (`userScalable: false`) from `app/layout.tsx`.
-
+5. Added Canonical Tag : Configured `alternates: { canonical: "/" }` using `metadataBase` in `app/layout.tsx` to explicitly define the default self-referencing canonical URL.
 
 ## Recommendations
 
-1. Implement `public/robots.txt`: Add a robots instructions file to guide search engines on indexable routes.
 
-2. Generate `sitemap.xml`: Implement Next.js dynamic sitemap generation (`app/sitemap.ts`) for better URL discovery.
+1. Generate `sitemap.xml`: Implement Next.js dynamic sitemap generation (`app/sitemap.ts`) for better URL discovery.
 
-3. Audit Additional Routes : Check `/onlinestore`, `/web/about`, and `/web/contact` pages for descriptive heading hierarchy and page-specific metadata.
+2. Audit Additional Routes : Check `/onlinestore`, `/web/about`, and `/web/contact` pages for descriptive heading hierarchy and page-specific metadata.
